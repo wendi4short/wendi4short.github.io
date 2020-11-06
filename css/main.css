@@ -12,9 +12,10 @@ body{
     height: 100vh;
  }
 
- #home.section{
-    text-align: center;
+.homeBackground{
     background-image: url("/images/homeBackground.jpg");
+    width: 100vw;
+    height: 100vh;
  }
 
 .bigName h1{
