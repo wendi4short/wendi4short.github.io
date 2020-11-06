@@ -12,8 +12,6 @@ body{
     background-color: rgba(112, 113, 114, 0.123);
     font-family: 'Space Grotesk', sans-serif;
     margin: 0;
-    display: grid;
-    grid-template-columns: min-content 1fr;
 }
 
 .section{
@@ -52,15 +50,4 @@ body{
     font-variant: 400;
 }
 
-.nav {
-    white-space: normal;
-    background: #37474F;
-  }
 
-.nav ul{
-    list-style: none right;
-    margin: 0;
-    padding: 0;
-    float: right;
-    position: sticky;
-}
