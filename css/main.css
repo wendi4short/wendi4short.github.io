@@ -19,8 +19,6 @@ body{
     color: snow;
     font-size: larger;
     font-weight: bolder;
-    text-align: center;
-    object-position: center;
     top: 250px;
 }
 
@@ -28,8 +26,6 @@ body{
     color: snow;
     font-size: large;
     font-weight: bold;
-    text-align: center;
-    object-position: center;
     top: 260px;
 }
 
