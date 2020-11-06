@@ -10,10 +10,6 @@ body{
     margin: 0;
 }
 
-.section{
-    width: 100vw;
-    height: 100vh;
-}
 
 #home{
     background: url('/images/homeBackground.jpg') no-repeat fixed;
@@ -27,7 +23,6 @@ body{
     justify-content:center; /* vertically centered because flex direction is column */
     height:15em; /* so it knows what space is available to center in */
     text-align: center;
-}
 }
 
 .bigName h1{
