@@ -30,19 +30,17 @@ body{
 
 .bigName h1{
     color: snow;
-    font-size: larger;
+    font-size: xx-large;
     font-weight: bolder;
     top: 250px;
-    text-align: center;
     text-decoration: none;
 }
 
 .bigName h2{
     color: snow;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     top: 260px;
-    text-align: center;
     text-decoration: none;
 }
 
