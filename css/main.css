@@ -1,6 +1,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
     background-color: slategrey;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +13,7 @@ body{
  }
 
  #home.section{
-     text-align: center;
+    text-align: center;
  }
 
 .bigName h1{
@@ -37,25 +38,36 @@ body{
     position: fixed;
     bottom: 200px;
     right: 50px;
-  }
+}
 
-  .nav ul{
-    list-style: none;
+.nav ul{
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 150px;
-  }
+    width: 200px;
+    background-color: rgb(8, 24, 70);
+    border: 1px solid #555;
+}
 
+.nav li{
+    border-bottom: 1px solid #555;
+}
 
-  .nav li a {
+.nav li a{
     display: block;
-    width: 60px;
-    color: lightslategrey;
-  }
+    color: seashell;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
 
-  .nav li a:hover {
+.nav li a:hover {
     background-color: rgb(8, 24, 70);
     color: white;
+}
+
+.nav li:last-child {
+    border-bottom: none;
   }
 
 a.active{
