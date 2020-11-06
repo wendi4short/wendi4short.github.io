@@ -5,7 +5,8 @@ body{
     background-color: slategrey;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
- .section{
+
+.section{
     width: 100vw;
     height: 100vh;
  }
