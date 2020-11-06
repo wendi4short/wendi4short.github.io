@@ -28,18 +28,19 @@ body{
     flex-direction:column; /* not the default row */
     justify-content:center; /* vertically centered because flex direction is column */
     height:15em; /* so it knows what space is available to center in */
+    text-align: center;
 }
 }
 
 .bigName h1{
     color: snow;
-    font-size: 300px;
+    font-size: 100px;
     text-decoration: none;
 }
 
 .bigName h2{
     color: snow;
-    font-size: 200px;
+    font-size: 80px;
     text-decoration: none;
 }
 
