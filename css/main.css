@@ -11,7 +11,7 @@ body{
     height: 100vh;
  }
 
-.bigName h1{
+.section.bigName h1{
     color: snow;
     font-size: larger;
     font-weight: bolder;
@@ -20,7 +20,7 @@ body{
     top: 250px;
 }
 
-.bigName h2{
+.section.bigName h2{
     color: snow;
     font-size: large;
     font-weight: bold;
