@@ -11,7 +11,11 @@ body{
     height: 100vh;
  }
 
-.section.bigName h1{
+ #home.section{
+     text-align: center;
+ }
+
+.bigName h1{
     color: snow;
     font-size: larger;
     font-weight: bolder;
@@ -20,7 +24,7 @@ body{
     top: 250px;
 }
 
-.section.bigName h2{
+.bigName h2{
     color: snow;
     font-size: large;
     font-weight: bold;
