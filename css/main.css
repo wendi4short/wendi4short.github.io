@@ -22,11 +22,11 @@ body{
 #home{
     background: url('/images/homeBackground.jpg') no-repeat fixed;
     background-position: center center;
-    -webkit-background-size: 1vmax;
-    -moz-background-size: 1vmax;
-    -o-background-size: 1vmax;
-    background-size: 1vmax;
-    min-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 1000px;
     display:flex;
     flex-direction:column; /* not the default row */
     justify-content:center; /* vertically centered because flex direction is column */
