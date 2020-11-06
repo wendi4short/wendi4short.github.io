@@ -31,7 +31,6 @@ body{
 }
 
 .nav {
-    background-color: dimgrey;
     padding: 5px;;
     width: 130px;
     z-index: 100;
@@ -44,13 +43,14 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
     background-color: rgb(8, 24, 70);
     border: 1px solid #555;
+    height: 300px;
 }
 
 .nav li{
     border-bottom: 1px solid #555;
+    color: seashell;
 }
 
 .nav li a{
