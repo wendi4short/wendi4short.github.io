@@ -25,6 +25,10 @@ body{
     background-size: cover;
     min-height: 700px;
     text-align: center;
+    display:flex;
+    flex-direction:column; /* not the default row */
+    justify-content:center; /* vertically centered because flex direction is column */
+    height:15em; /* so it knows what space is available to center in */
 }
 }
 
