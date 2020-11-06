@@ -58,9 +58,10 @@ body{
   }
 
 .nav ul{
-    list-style: none;
+    list-style: none right;
     margin: 0;
     padding: 0;
+    float: right;
 }
 
 @media (min-height: 300px) {
