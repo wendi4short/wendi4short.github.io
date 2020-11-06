@@ -1,0 +1,21 @@
+body.home {
+    background-image: url(/images/homeBackground.jpg);
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
+body.plain {
+    background-color: darkslategray;
+}
+
+.bigName h1{
+    color: ivory;
+    font-size: larger;
+    text-align: center;
+}
+
+.bigName h2{
+    color: ivory;
+    font-size: large;
+    text-align: center;
+}
