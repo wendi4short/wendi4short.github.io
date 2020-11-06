@@ -16,7 +16,7 @@ body{
     height: 100vh;
 }
 
-.section .backgroundImage{
+#home{
     background: url('/images/homeBackground.jpg') no-repeat fixed;
     background-position: center center;
     -webkit-background-size: cover;
