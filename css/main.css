@@ -31,6 +31,8 @@ body{
     font-size: larger;
     font-weight: bolder;
     top: 250px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .bigName h2{
@@ -38,6 +40,8 @@ body{
     font-size: large;
     font-weight: bold;
     top: 260px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .nav {
