@@ -17,6 +17,7 @@ body{
     font-weight: bolder;
     text-align: center;
     object-position: center;
+    top: 250px;
 }
 
 .bigName h2{
@@ -25,6 +26,7 @@ body{
     font-weight: bold;
     text-align: center;
     object-position: center;
+    top: 260px;
 }
 
 .nav {
