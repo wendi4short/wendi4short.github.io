@@ -1,24 +1,5 @@
-.bg-image {
-    background-image: url(/images/homeBackground.jpg);
-    filter: blur(3px);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-body.plain {
-    background-color: darkslategray;
-}
-
-.bigName h1{
-    color: ivory;
-    font-size: larger;
-    text-align: center;
-}
-
-.bigName h2{
-    color: ivory;
-    font-size: large;
-    text-align: center;
+body{
+    background-color: slategrey;
+    width: fit-content;
+    height: fit-content;
 }
