@@ -22,10 +22,10 @@ body{
 #home{
     background: url('/images/homeBackground.jpg') no-repeat fixed;
     background-position: center center;
-    -webkit-background-size: 0vmax;
-    -moz-background-size: 0vmax;
-    -o-background-size: 0vmax;
-    background-size: 0vmax;
+    -webkit-background-size: 1vmax;
+    -moz-background-size: 1vmax;
+    -o-background-size: 1vmax;
+    background-size: 1vmax;
     min-height: 700px;
     display:flex;
     flex-direction:column; /* not the default row */
