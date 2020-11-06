@@ -3,6 +3,10 @@
 html{
     scroll-behavior: smooth;
 }
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%; }
     
 body{
     background-color: rgba(112, 113, 114, 0.123);
@@ -22,12 +26,14 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-height: 700px;
     display:flex;
     flex-direction:column; /* not the default row */
     justify-content:center; /* vertically centered because flex direction is column */
     height:15em; /* so it knows what space is available to center in */
     text-align: center;
 }
+
 
 .bigName h1{
     color: snow;
