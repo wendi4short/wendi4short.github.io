@@ -7,6 +7,24 @@ body{
 
 .bigName h1{
     color: snow;
-    font-size: xx-large;
-    font-style: oblique;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
 }
+
+.bigName h2{
+    color: snow;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav {
+    background-color: dimgrey;
+    padding: 5px;;
+    width: 130px;
+    z-index: 100;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+  }
