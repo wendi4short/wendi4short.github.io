@@ -44,10 +44,6 @@ body{
     font-variant: 400;
 }
 
-.nav ul a li{
+.nav-item {
     color: snow;
-}
-
-.nav ul li{
-    padding: ;
 }
