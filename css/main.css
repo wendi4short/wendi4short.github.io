@@ -90,7 +90,3 @@ body{
 .nav li:last-child {
     border-bottom: none;
 }
-
-nav ul li a.active {
-    background: black;
-}
