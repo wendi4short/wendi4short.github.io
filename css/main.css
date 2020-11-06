@@ -16,7 +16,7 @@ body{
     max-width: 100%;
     max-height: 100%;
     background-image: url("/images/homeBackground.jpg");
-    object-fit: contain;
+    object-fit: cover;
  }
 
 .bigName h1{
