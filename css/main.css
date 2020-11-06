@@ -10,10 +10,12 @@ body{
     margin: 0;
 }
 
-
-#home{
+.section{
     width: 100vw;
     height: 100vh;
+}
+
+#home{
     background: url('/images/homeBackground.jpg') no-repeat fixed;
     background-position: center center;
     -webkit-background-size: cover;
