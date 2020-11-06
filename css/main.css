@@ -50,33 +50,32 @@ body{
 }
 
 .nav {
-    padding: 5px;;
-    z-index: 100;
-    position: fixed;
-    top: 100px;
-    right: 100px;
-}
+    white-space: nowrap;
+    background: #37474F;
+  }
 
 .nav ul{
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(8, 24, 70);
-    height: 300px;
-    justify-content: center;
 }
 
+@media (min-height: 300px) {
+    .nav ul {
+      position: sticky;
+      top: 0;
+    }
+  }
 .nav li{
     border-bottom: 1px solid #555;
     color: seashell;
 }
 
-.nav li a{
+.nav ul li a{
     display: block;
-    color: seashell;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
+    color: white;
     text-decoration: none;
-    text-align: center;
 }
 
 .nav li a:hover {
@@ -86,9 +85,8 @@ body{
 
 .nav li:last-child {
     border-bottom: none;
-  }
+}
 
-a.active{
-    background-color: rgb(8, 24, 70);
-    color: white;
+nav ul li a.active {
+    background: black;
 }
