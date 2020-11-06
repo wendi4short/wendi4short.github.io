@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -8,7 +10,7 @@ html{
     
 body{
     background-color: rgba(112, 113, 114, 0.123);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .section{
@@ -36,12 +38,15 @@ body{
     color: snow;
     font-size: 100px;
     text-decoration: none;
+    font-style: oblique;
+    font-variant: 500;
 }
 
 .bigName h2{
     color: snow;
     font-size: 80px;
     text-decoration: none;
+    font-variant: 400;
 }
 
 .nav {
@@ -58,6 +63,7 @@ body{
     padding: 0;
     background-color: rgb(8, 24, 70);
     height: 300px;
+    justify-content: center;
 }
 
 .nav li{
