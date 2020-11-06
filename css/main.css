@@ -1,7 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: slategrey;
-    width: fit-content;
-    height: fit-content;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
