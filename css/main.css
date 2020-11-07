@@ -66,7 +66,7 @@ body{
    border-color: #f1f1f10e;
 }
 
-.container-fluid {
+.container-fluid.fill {
     padding: 80px 120px;
 }
 
