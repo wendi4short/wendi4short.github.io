@@ -85,4 +85,21 @@ body{
 
 .col-sm-6{
     padding: 40px 80px 30px 20px;
+
+}
+
+.col-sm-12 h1{
+    border-bottom: 1px dashed rgba(233, 229, 229);
+}
+
+.col-sm-6.left{
+    border-right: 1px dashed rgb(233, 229, 229);
+}
+
+.col-sm-6.right{
+    border-left: 1px dashed rgb(233, 229, 229);
+}
+
+.col-sm-4.left{
+    border-right: 1px dashed rgb(233, 229, 229);
 }
