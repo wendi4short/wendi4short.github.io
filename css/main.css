@@ -101,5 +101,9 @@ body{
 }
 
 .col-sm-4.right{
+    border-left: 1px dashed rgb(233, 229, 229);
+}
+
+.col-sm-8.left{
     border-right: 1px dashed rgb(233, 229, 229);
 }
