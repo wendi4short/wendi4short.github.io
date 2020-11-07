@@ -50,6 +50,10 @@ body{
     color: snow;
 }
 
+.navbar-brand{
+    color: darkgrey;
+}
+
 .section .header{
     margin-top: 60px;
 }
