@@ -86,3 +86,7 @@ body{
 .col-sm-6{
     padding: 40px 80px 30px 20px;
 }
+
+.navbar-toggler-icon{
+    color: darkgrey;
+}
