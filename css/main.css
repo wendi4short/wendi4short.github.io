@@ -99,3 +99,7 @@ body{
 .col-8.left{
     border-right: 1px dashed rgb(233, 229, 229);
 }
+
+.contactDetails{
+    text-decoration: none;
+}
