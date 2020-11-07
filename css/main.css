@@ -113,3 +113,7 @@ body{
 a.linkedin{
     color: lightgray;
 }
+
+a.linkedin:hover{
+    color: lightslategrey;
+}
