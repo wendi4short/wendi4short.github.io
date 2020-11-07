@@ -55,8 +55,6 @@ body{
 .me {
     border: 10px solid transparent;
     margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
     opacity: 0.9;
   }
 .me:hover {
