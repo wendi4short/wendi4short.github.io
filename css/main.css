@@ -59,9 +59,9 @@ body{
     height: 80%;
     opacity: 0.9;
   }
-  .me:hover {
-    border-color: #f1f1f1;
-  }
+.me:hover {
+   border-color: #f1f1f133;
+}
 
   .container {
     padding: 80px 120px;
