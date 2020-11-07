@@ -14,10 +14,10 @@ body{
     margin: 0;
 }
 
-.section{
+/*.section{
     width: 100vw;
-    height: 80vh;
-}
+    height: 60vh;
+}*/
 
 #home{
     background: url('/images/homeBackground.jpg') no-repeat fixed;
