@@ -51,8 +51,8 @@ body{
 .rounded-circle.me {
     border: 10px solid transparent;
     margin-bottom: 25px;
-    width: 370px;
-    height: 370px;
+    max-width: 100%;
+    height: auto;
     opacity: 0.9;
     justify-content: center;
   }
