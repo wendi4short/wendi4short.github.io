@@ -102,13 +102,12 @@ body{
 
 .contactDetails{
     list-style-type: none;
-    justify-content: center;
 }
 
-.contactme{
-    justify-content: center;
+.iconblock{
+    color: lightgray;
+    list-style-type: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-.fas{
-    justify-content: center;
-}
