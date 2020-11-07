@@ -13,12 +13,8 @@ body{
 #home{
     background: url('/images/homeBackground.jpg') no-repeat fixed;
     background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     min-height: 100%;
-    display:flex;
     flex-direction:column; /* not the default row */
     justify-content:center; /* vertically centered because flex direction is column */
     height:20em; /* so it knows what space is available to center in */
