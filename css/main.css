@@ -31,7 +31,6 @@ body{
     flex-direction:column; /* not the default row */
     justify-content:center; /* vertically centered because flex direction is column */
     height:20em; /* so it knows what space is available to center in */
-    text-align: center;
 }
 
 
