@@ -110,10 +110,10 @@ body{
     margin-top: 16px;
     margin-bottom: 16px;
 }
-a.linkedin{
+a.icon{
     color: lightgray;
 }
 
-a.linkedin:hover{
+a.icon:hover{
     color: lightslategrey;
 }
