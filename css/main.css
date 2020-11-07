@@ -56,13 +56,13 @@ body{
 .rounded-circle.me {
     border: 10px solid transparent;
     margin-bottom: 25px;
-    width: 80%;
+    width: 100%;
     height: 100%;
     opacity: 0.9;
   }
 
 .rounded-circle.me:hover {
-   border-color: #f1f1f133;
+   border-color: #f1f1f10e;
 }
 
 .container-fluid {
@@ -75,5 +75,5 @@ body{
 }
 
 .col-sm-4{
-    padding: 16px 40px;
+    padding: 40px 40px;
 }
