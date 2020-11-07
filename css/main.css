@@ -50,7 +50,7 @@ body{
 }
 
 .section .header{
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .rounded-circle.me {
@@ -70,10 +70,10 @@ body{
 }
 
 .fill { 
-    min-height: 80%;
-    height: 80%;
+    min-height: 90%;
+    height: 90%;
 }
 
 .col-sm-4{
-    padding: 40px 40px;
+    padding: 40px 80px 30px 20px;
 }
