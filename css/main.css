@@ -60,7 +60,7 @@ body{
 .rounded-circle.me {
     border: 10px solid transparent;
     margin-bottom: 20%;
-    max-width: 20vh;
+    max-width: 20vw;
     height: auto;
     opacity: 0.9;
     justify-content: center;
