@@ -146,25 +146,29 @@ a.icon:hover{
 }
 
 h1{
-    font-size: 6vw;
-}
-
-h2{
     font-size: 3vw;
 }
 
-h3{
+h2{
     font-size: 2vw;
 }
 
+h3{
+    font-size: 1.8vw;
+}
+
 h4{
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 li{
-    font-size: 1vw;
+    font-size: 0.8vw;
 }
 
 p{
-    font-size: 1vw;
+    font-size: 0.8vw;
+}
+
+.titlepage{
+    font-size: 4vw;
 }
