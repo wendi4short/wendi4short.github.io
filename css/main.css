@@ -54,6 +54,7 @@ body{
 
 .navbar-brand{
     color: rgba(32, 32, 32, 0.808);
+    font-size: 90%;
 }
 
 .section .header{
