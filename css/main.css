@@ -60,7 +60,7 @@ body{
 .rounded-circle.me {
     border: 10px solid transparent;
     margin-bottom: 20%;
-    max-width: 100%;
+    max-width: 20vh;
     height: auto;
     opacity: 0.9;
     justify-content: center;
@@ -142,8 +142,8 @@ a.icon:hover{
 
 .progress{
       margin-bottom: 10px;
-      font-size: 70%;
-      height: 1vh;
+      font-size: 1.3vh;
+      height: 2vh;
       width: 100%;
 }
 
