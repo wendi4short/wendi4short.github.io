@@ -72,7 +72,7 @@ body{
 
 .container-fluid.fill{
     background-color: dimgray;
-    padding: 2.5% 3.5%;
+    padding: 3% 4%;
     height:100%;
     width: auto;
 } 
@@ -178,4 +178,8 @@ p{
 
 ul{
     margin: 0;
+}
+
+.forcolumns{
+    margin-top: 1.5%;
 }
