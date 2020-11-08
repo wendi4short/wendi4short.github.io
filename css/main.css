@@ -54,7 +54,6 @@ body{
 
 .navbar-brand{
     color: rgba(32, 32, 32, 0.808);
-    font-size: 100%;
 }
 
 .section .header{
@@ -63,7 +62,7 @@ body{
 
 .rounded-circle.me {
     border: 10px solid transparent;
-    margin-bottom: 25px;
+    margin-bottom: 20%;
     max-width: 100%;
     height: auto;
     opacity: 0.9;
@@ -83,11 +82,11 @@ body{
 
 
 .col-4{
-    padding: 40px 50px 30px 50px;
+    padding: 5vh 5vw;
 }
 
 .col-6{
-    padding: 40px 50px 30px 50px;
+    padding: 5vh 5vw;
 
 }
 
@@ -118,8 +117,8 @@ body{
 .iconblock{
     color: lightgray;
     list-style-type: none;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 a.icon{
     color: lightgray;
@@ -135,9 +134,9 @@ a.icon:hover{
 
 .credits {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
-    font-size: 12px;
+    bottom: 1vw;
+    right: 1vw;
+    font-size: 0.9vw;
     color: snow;
   }
 
@@ -148,32 +147,34 @@ a.icon:hover{
       width: 100%;
 }
 
-
 h1{
-    font-size: 150%;
+    font-size: 3vw;
 }
 
 h2{
-    font-size: 100%;
+    font-size: 2vw;
 }
 
 h3{
-    font-size: 90%;
-    margin-top: 60%;
+    font-size: 1.8vw;
+    margin-top: 0.6vw;
 }
 
 h4{
-    font-size: 50%;
+    font-size: 1vw;
 }
 
 li{
-    font-size: 45%;
+    font-size: 0.9vw;
 }
 
 p{
-    font-size: 45%;
+    font-size: 0.9vw;
 }
 
+.titlepage{
+    font-size: 4vw;
+}
 
 ul{
     margin: 0;
