@@ -26,9 +26,6 @@ body{
     flex-direction:column; /* not the default row */
     justify-content:center; /* vertically centered because flex direction is column */
     height:20em; /* so it knows what space is available to center in */
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-
 }
 
 .bigName h1{ 
@@ -129,7 +126,7 @@ a.icon:hover{
     color: lightslategrey;
 }
 
-.bottomright {
+.credits {
     position: absolute;
     bottom: 8px;
     right: 16px;
