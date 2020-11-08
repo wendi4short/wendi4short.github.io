@@ -54,7 +54,7 @@ body{
 
 .navbar-brand{
     color: rgba(32, 32, 32, 0.808);
-    font-size: 2vmin;
+    font-size: 3vmin;
 }
 
 .rounded-circle.me {
@@ -72,7 +72,7 @@ body{
 
 .container-fluid.fill{
     background-color: dimgray;
-    padding: 3% 4%;
+    padding: 4% 5%;
     height:100%;
     width: auto;
 } 
@@ -165,11 +165,11 @@ h4{
 }
 
 li{
-    font-size: 1.8vmin;
+    font-size: 2vmin;
 }
 
 p{
-    font-size: 1.8vmin;
+    font-size: 2vmin;
 }
 
 .titlepage{
