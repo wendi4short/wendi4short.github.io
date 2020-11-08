@@ -57,7 +57,7 @@ body{
 }
 
 .header{
-    margin-top: 20%;
+    margin-top: 10vh;
 }
 
 .rounded-circle.me {
@@ -79,6 +79,10 @@ body{
     height:100%;
     width: auto;
 } 
+
+.inContainer{
+    position: relative;
+}
 
 
 .col-4{
