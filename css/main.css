@@ -71,7 +71,7 @@ body{
 
 .container-fluid.fill{
     background-color: dimgray;
-    padding: 8% 5%;
+    padding: 1% 2%;
     height:100%;
     width: auto;
 } 
@@ -147,32 +147,32 @@ a.icon:hover{
 }
 
 h1{
-    font-size: 30*calc(vw/vh);
+    font-size: 3vw;
 }
 
 h2{
-    font-size: 10*calc(vw/vh);
+    font-size: 2vw;
 }
 
 h3{
-    font-size: 5*calc(vw/vh);
+    font-size: 1.8vw;
     margin-top: 0.6vw;
 }
 
 h4{
-    font-size: 3*calc(vw/vh);
+    font-size: 1vw;
 }
 
 li{
-    font-size: calc(vw/vh);
+    font-size: 0.9vw;
 }
 
 p{
-    font-size: calc(vw/vh);
+    font-size: 0.9vw;
 }
 
 .titlepage{
-    font-size: 50*calc(vw/vh);
+    font-size: 4vw;
 }
 
 ul{
