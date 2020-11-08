@@ -49,7 +49,7 @@ body{
 }
 
 .navbar-brand{
-    color: rgba(169, 169, 169, 0.062);
+    color: rgba(32, 32, 32, 0.808);
 }
 
 .section .header{
@@ -124,6 +124,10 @@ a.icon{
 
 a.icon:hover{
     color: lightslategrey;
+}
+
+.creditContainer{
+    position: relative;
 }
 
 .credits {
