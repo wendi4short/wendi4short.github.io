@@ -147,33 +147,28 @@ a.icon:hover{
 }
 
 h1{
-    font-size: 3vw;
+    font-size: 30*calc(vw/vh);
 }
 
 h2{
-    font-size: 2vw;
-}
+    font-size: 20*calc(vw/vh);}
 
 h3{
-    font-size: 1.8vw;
+    font-size: 10*calc(vw/vh);
     margin-top: 0.6vw;
 }
 
 h4{
-    font-size: 1vw;
-}
+    font-size: 5*calc(vw/vh);}
 
 li{
-    font-size: 0.9vw;
-}
+    font-size: 3*calc(vw/vh);}
 
 p{
-    font-size: 0.9vw;
-}
+    font-size: 3*calc(vw/vh);}
 
 .titlepage{
-    font-size: 4vw;
-}
+    font-size: 50*calc(vw/vh);}
 
 ul{
     margin: 0;
