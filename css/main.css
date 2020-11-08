@@ -54,7 +54,7 @@ body{
 
 .navbar-brand{
     color: rgba(32, 32, 32, 0.808);
-    font-size: 90%;
+    font-size: 100%;
 }
 
 .section .header{
@@ -150,28 +150,28 @@ a.icon:hover{
 
 
 h1{
-    font-size: 70%;
+    font-size: 150%;
 }
 
 h2{
-    font-size: 50%;
+    font-size: 100%;
 }
 
 h3{
-    font-size: 40%;
-    margin-top: 20%;
+    font-size: 90%;
+    margin-top: 60%;
 }
 
 h4{
-    font-size: 30%;
+    font-size: 50%;
 }
 
 li{
-    font-size: 25%;
+    font-size: 45%;
 }
 
 p{
-    font-size: 25%;
+    font-size: 45%;
 }
 
 
