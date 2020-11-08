@@ -7,7 +7,7 @@ html{
 body{
     font-family: 'Space Grotesk', sans-serif;
     margin: 0;
-    position: relative;
+    position: fixed;
     height: 100%;
 }
 
@@ -56,12 +56,12 @@ body{
 }
 
 .section .header{
-    margin-top: 60px;
+    margin-top: 7%;
 }
 
 .rounded-circle.me {
     border: 10px solid transparent;
-    margin-bottom: 25px;
+    margin-bottom: 10%;
     max-width: 100%;
     height: auto;
     opacity: 0.9;
@@ -72,20 +72,22 @@ body{
    border-color: #f1f1f10e;
 }
 
-.container-fluid.fill{
+.container-fluid{
     background-color: dimgray;
     padding: 8% 5%;
-    height:100%;
-    width: auto;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
 } 
 
 
 .col-4{
-    padding: 40px 50px 30px 50px;
+    padding: 10% 20%;
 }
 
 .col-6{
-    padding: 40px 50px 30px 50px;
+    padding: 10% 20%;
 
 }
 
@@ -116,8 +118,8 @@ body{
 .iconblock{
     color: lightgray;
     list-style-type: none;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 a.icon{
     color: lightgray;
@@ -133,16 +135,16 @@ a.icon:hover{
 
 .credits {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
-    font-size: 12px;
+    bottom: 1%;
+    right: 1%;
+    font-size: 2%;
     color: snow;
   }
 
 .progress{
       margin-bottom: 10px;
-      font-size: 0.9vw;
-      height: 5%;
+      font-size: 0.9%;
+      height: 1.5%;
       width: 100%;
 }
 
@@ -151,32 +153,32 @@ a.icon:hover{
 }
 
 h1{
-    font-size: 3vw;
+    font-size: 3%;
 }
 
 h2{
-    font-size: 2vw;
+    font-size: 2%;
 }
 
 h3{
-    font-size: 1.8vw;
-    margin-top: 0.6vw;
+    font-size: 1.8%;
+    margin-top: 0.6%;
 }
 
 h4{
-    font-size: 1vw;
+    font-size: 1%;
 }
 
 li{
-    font-size: 0.9vw;
+    font-size: 0.9%;
 }
 
 p{
-    font-size: 0.9vw;
+    font-size: 0.9%;
 }
 
 .titlepage{
-    font-size: 4vw;
+    font-size: 4%;
 }
 
 ul{
