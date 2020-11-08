@@ -142,6 +142,8 @@ a.icon:hover{
 .progress{
       margin-bottom: 10px;
       font-size: 0.9vw;
+      height: 2vw;
+      width: 10vw;
 }
 
 #education{
