@@ -147,32 +147,32 @@ a.icon:hover{
 }
 
 h1{
-    font-size: 30vmin;
+    font-size: 8vmin;
 }
 
 h2{
-    font-size: 20vmin;
+    font-size: 6vmin;
 }
 
 h3{
-    font-size: 10vmin;
+    font-size: 4vmin;
     margin-top: 0.6vmin;
 }
 
 h4{
-    font-size: 5vmin;
+    font-size: 2vmin;
 }
 
 li{
-    font-size: 3vmin;
+    font-size: 1vmin;
 }
 
 p{
-    font-size: 3vmin;
+    font-size: 1vmin;
 }
 
 .titlepage{
-    font-size: 70vmin;
+    font-size: 10vmin;
 }
 
 ul{
