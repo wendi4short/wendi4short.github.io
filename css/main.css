@@ -56,10 +56,6 @@ body{
     color: rgba(32, 32, 32, 0.808);
 }
 
-.header{
-    margin-top: 5vh;
-}
-
 .rounded-circle.me {
     border: 10px solid transparent;
     margin-bottom: 20%;
