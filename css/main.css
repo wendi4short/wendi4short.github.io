@@ -49,7 +49,7 @@ body{
 }
 
 .navbar-brand{
-    color: darkgrey;
+    color: rgba(169, 169, 169, 0.363);
 }
 
 .section .header{
@@ -127,9 +127,9 @@ a.icon:hover{
 }
 
 .credits {
-    position: absolute;
+    position: bottom;
     bottom: 8px;
-    right: 16px;
+    right: 8px;
     font-size: 18px;
     color: snow;
   }
