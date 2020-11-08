@@ -92,22 +92,27 @@ body{
 
 .col-6.left{
     border-right: 1px dashed rgb(233, 229, 229);
+    position: relative;
 }
 
 .col-6.right{
     border-left: 1px dashed rgb(233, 229, 229);
+    position: relative;
 }
 
 .col-4.left{
     border-right: 1px dashed rgb(233, 229, 229);
+    position: relative;
 }
 
 .col-4.right{
     border-left: 1px dashed rgb(233, 229, 229);
+    position: relative;
 }
 
 .col-8.left{
     border-right: 1px dashed rgb(233, 229, 229);
+    position: relative;
 }
 
 .contactDetails{
@@ -143,7 +148,7 @@ a.icon:hover{
 .progress{
       margin-bottom: 10px;
       font-size: 99%;
-      height: 1.5%;
+      height: 3%;
       width: 100%;
 }
 
