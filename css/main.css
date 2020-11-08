@@ -54,6 +54,7 @@ body{
 
 .navbar-brand{
     color: rgba(32, 32, 32, 0.808);
+    font-size: 2vmin;
 }
 
 .rounded-circle.me {
@@ -172,7 +173,7 @@ p{
 }
 
 .titlepage{
-    font-size: 10vmin;
+    font-size: 12vmin;
 }
 
 ul{
