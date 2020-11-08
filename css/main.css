@@ -151,7 +151,7 @@ h1{
 }
 
 h2{
-    font-size: 6vmin;
+    font-size: 5vmin;
 }
 
 h3{
@@ -164,11 +164,11 @@ h4{
 }
 
 li{
-    font-size: 1vmin;
+    font-size: 1.5vmin;
 }
 
 p{
-    font-size: 1vmin;
+    font-size: 1.5vmin;
 }
 
 .titlepage{
