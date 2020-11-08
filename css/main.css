@@ -135,7 +135,7 @@ a.icon:hover{
     position: absolute;
     bottom: 1vw;
     right: 1vw;
-    font-size: 0.9vw;
+    font-size: 0.9vmin;
     color: snow;
   }
 
@@ -147,32 +147,32 @@ a.icon:hover{
 }
 
 h1{
-    font-size: 3vw;
+    font-size: 3vmin;
 }
 
 h2{
-    font-size: 2vw;
+    font-size: 2vmin;
 }
 
 h3{
-    font-size: 1.8vw;
-    margin-top: 0.6vw;
+    font-size: 1.8vmin;
+    margin-top: 0.6vmin;
 }
 
 h4{
-    font-size: 1vw;
+    font-size: 1vmin;
 }
 
 li{
-    font-size: 0.9vw;
+    font-size: 0.9vmin;
 }
 
 p{
-    font-size: 0.9vw;
+    font-size: 0.9vmin;
 }
 
 .titlepage{
-    font-size: 4vw;
+    font-size: 4vmin;
 }
 
 ul{
