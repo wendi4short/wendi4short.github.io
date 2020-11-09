@@ -112,6 +112,7 @@ body{
 
 .contactDetails{
     list-style-type: none;
+    padding: 0;
 }
 
 .contactme{
