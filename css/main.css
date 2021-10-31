@@ -71,7 +71,7 @@ body{
 }
 
 .container-fluid.fill{
-    background-color: dimgray;
+    background-color:rgb(138, 148, 148);
     padding: 5% 5%;
     height:100%;
     width: auto;
@@ -188,4 +188,15 @@ ul{
 
 #whycode{
     margin-top: 3vmin;
+}
+
+.carousel-item{
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#projects{
+    height: 100vh;
+    padding: 0%;
 }
