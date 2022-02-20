@@ -1,202 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap");
 
-html{
-    scroll-behavior: smooth;
-}
-    
-body{
-    font-family: 'Space Grotesk', sans-serif;
-    margin: 0;
-    position: relative;
-    height: 100%;
+html {
+  scroll-behavior: smooth;
 }
 
-#home{
-    background: url('/images/homeBackground.jpg') no-repeat fixed;
-    background-position: center center;
-    background-size: cover;
-    flex-direction:column; /* not the default row */
-    justify-content:center; /* vertically centered because flex direction is column */
-    height:100%; /* so it knows what space is available to center in */
-    width: auto;
+body {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+  position: relative;
+  height: 100%;
 }
 
-
-#education{
-    background: url('/images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg') no-repeat fixed;
-    background-position: center center;
-    background-size: cover;
-    flex-direction:column; /* not the default row */
-    justify-content:center; /* vertically centered because flex direction is column */
-    height: 100%; /* so it knows what space is available to center in */
-    width: auto;
-    color: seashell;
-}
-    
-
-.bigName h1{ 
-    margin-top: 20%;
-    color: snow;
-    text-decoration: none;
-    font-variant: 500;
+#home {
+  background: url("/images/homeBackground.jpg") no-repeat fixed;
+  background-position: center center;
+  background-size: cover;
+  flex-direction: column; /* not the default row */
+  justify-content: center; /* vertically centered because flex direction is column */
+  height: 100%; /* so it knows what space is available to center in */
+  width: auto;
+  object-fit: cover;
 }
 
-.bigName h2{
-    color: snow;
-    text-decoration: none;
-    font-style: oblique;
-    font-variant: 400;
+#education {
+  background: url("/images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg") no-repeat fixed;
+  background-position: center center;
+  background-size: cover;
+  flex-direction: column; /* not the default row */
+  justify-content: center; /* vertically centered because flex direction is column */
+  height: 100%; /* so it knows what space is available to center in */
+  width: auto;
+  color: seashell;
+  object-fit: cover;
 }
 
-.nav-link{
-    color: snow;
+.carousel-cover {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
-.navbar-brand{
-    color: rgba(32, 32, 32, 0.808);
-    font-size: 3vmin;
+.bigName h1 {
+  margin-top: 20%;
+  color: snow;
+  text-decoration: none;
+  font-variant: 500;
+}
+
+.bigName h2 {
+  color: snow;
+  text-decoration: none;
+  font-style: oblique;
+  font-variant: 400;
+}
+
+.nav-link {
+  color: snow;
+}
+
+.navbar-brand {
+  color: rgba(32, 32, 32, 0.808);
+  font-size: 3vmin;
 }
 
 .rounded-circle.me {
-    border: 10px solid transparent;
-    margin-bottom: 10%;
-    max-width: 19vw;
-    height: auto;
-    opacity: 0.9;
-    justify-content: center;
-  }
+  border: 10px solid transparent;
+  margin-bottom: 10%;
+  max-width: 19vw;
+  height: auto;
+  opacity: 0.9;
+  justify-content: center;
+}
 
 .rounded-circle.me:hover {
-   border-color: #f1f1f10e;
+  border-color: #f1f1f10e;
 }
 
-.container-fluid.fill{
-    background-color:rgb(138, 148, 148);
-    padding: 5% 5%;
-    height:100%;
-    width: auto;
-} 
-
-.inContainer{
-    position: relative;
+.container-fluid.fill {
+  background-color: rgb(138, 148, 148);
+  padding: 5% 5%;
+  height: 100%;
+  width: auto;
 }
 
-
-.col-4{
-    padding: 1vh 2vw;
+.inContainer {
+  position: relative;
 }
 
-.col-6{
-    padding: 1vh 2vw;
+.col-4 {
+  padding: 1vh 2vw;
 }
 
-.col-6.left{
-    border-right: 1px dashed rgb(233, 229, 229);
+.col-6 {
+  padding: 1vh 2vw;
 }
 
-.col-6.right{
-    border-left: 1px dashed rgb(233, 229, 229);
+.col-6.left {
+  border-right: 1px dashed rgb(233, 229, 229);
 }
 
-.col-4.left{
-    border-right: 1px dashed rgb(233, 229, 229);
+.col-6.right {
+  border-left: 1px dashed rgb(233, 229, 229);
 }
 
-.col-4.right{
-    border-left: 1px dashed rgb(233, 229, 229);
+.col-4.left {
+  border-right: 1px dashed rgb(233, 229, 229);
 }
 
-.col-8.left{
-    border-right: 1px dashed rgb(233, 229, 229);
+.col-4.right {
+  border-left: 1px dashed rgb(233, 229, 229);
 }
 
-.contactDetails{
-    list-style-type: none;
-    padding: 0;
+.col-8.left {
+  border-right: 1px dashed rgb(233, 229, 229);
 }
 
-.contactme{
-    color: lightgray;
+.contactDetails {
+  list-style-type: none;
+  padding: 0;
 }
 
-.iconblock{
-    color: lightgray;
-    list-style-type: none;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-}
-a.icon{
-    color: lightgray;
+.contactme {
+  color: lightgray;
 }
 
-a.icon:hover{
-    color: lightslategrey;
+.iconblock {
+  color: lightgray;
+  list-style-type: none;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+a.icon {
+  color: lightgray;
 }
 
-.creditContainer{
-    position: relative;
+a.icon:hover {
+  color: lightslategrey;
+}
+
+.creditContainer {
+  position: relative;
 }
 
 .credits {
-    position: absolute;
-    bottom: 1vw;
-    right: 1vw;
-    font-size: 2vmin;
-    color: snow;
-  }
-
-.progress{
-      margin-bottom: 10px;
-      font-size: 1.3vh;
-      height: 2vh;
-      width: 100%;
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+  font-size: 2vmin;
+  color: snow;
 }
 
-h1{
-    font-size: 7vmin;
-    margin-top: 3vmin;
+.progress {
+  margin-bottom: 10px;
+  font-size: 1.3vh;
+  height: 2vh;
+  width: 100%;
 }
 
-h2{
-    font-size: 4.5vmin;
+h1 {
+  font-size: 7vmin;
+  margin-top: 3vmin;
 }
 
-h3{
-    font-size: 3vmin;
-    margin-top: 0.6vmin;
+h2 {
+  font-size: 4.5vmin;
 }
 
-h4{
-    font-size: 2vmin;
+h3 {
+  font-size: 3vmin;
+  margin-top: 0.6vmin;
 }
 
-li{
-    font-size: 2vmin;
+h4 {
+  font-size: 2vmin;
 }
 
-p{
-    font-size: 2vmin;
+li {
+  font-size: 2vmin;
 }
 
-ul{
-    margin: 0;
+p {
+  font-size: 2vmin;
 }
 
-.forcolumns{
-    margin-top: 1.5%;
+ul {
+  margin: 0;
 }
 
-#whycode{
-    margin-top: 3vmin;
+.forcolumns {
+  margin-top: 1.5%;
 }
 
-.carousel-item{
-    height: 100vh;
-    max-width: 100%;
-    max-height: 100%
+#whycode {
+  margin-top: 3vmin;
 }
 
-#projects{
-    height: 100vh;
-    padding: 0%;
+.carousel-item {
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#projects {
+  height: 100vh;
+  padding: 0%;
+}
+
+.project-title {
+  color: black;
+}
+
+.project-date {
+  color: rgb(184, 184, 184);
+  border-bottom: 0.2vh solid gray;
+  padding-bottom: 2vh;
+  margin-right: 10vw;
+}
+
+.project-title-div {
+  margin-top: 15vh;
+  padding-left: 5vw;
+  padding-bottom: 2vh;
+}
+
+.project-main {
+  background-color: white;
 }
