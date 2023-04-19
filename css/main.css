@@ -3,10 +3,10 @@
 /* set core colours as variables for use in the entire doc */
 
 :root {
-  --bright-blue: rgba(0, 200, 155, 0.542);
+  --bright-blue: rgba(0, 234, 180, 0.637);
   --white: snow;
-  --dark-blue: rgba(1, 57, 12, 0.992);
-  --medium-blue: rgb(56, 101, 75);
+  --dark-blue: rgba(1, 116, 89, 0.542);
+  --medium-blue: rgba(58, 210, 175, 0.779);
 }
 
 html {
@@ -32,7 +32,7 @@ body {
 }
 
 #education {
-  background: url("/images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg") no-repeat fixed;
+  background: url("C:\Users\Wenteehee\Desktop\wendi4short.github.io\images\joanna-kosinska-bF2vsubyHcQ-unsplash.jpg") no-repeat fixed;
   background-position: center center;
   background-size: cover;
   flex-direction: column; /* not the default row */
