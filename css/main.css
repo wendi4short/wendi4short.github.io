@@ -3,10 +3,10 @@
 /* set core colours as variables for use in the entire doc */
 
 :root {
-  --bright-blue: rgba(0, 234, 180, 0.637);
+  --bright-blue: rgba(0, 247, 255, 0.542);
   --white: snow;
-  --dark-blue: rgba(1, 116, 89, 0.542);
-  --medium-blue: rgba(58, 210, 175, 0.779);
+  --dark-blue: rgba(0, 2, 34);
+  --medium-blue: rgba(56, 81, 101);
 }
 
 html {
