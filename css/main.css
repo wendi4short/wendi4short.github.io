@@ -4,7 +4,7 @@
 
 :root {
   --bright-blue: rgba(0, 247, 255, 0.542);
-  --white: snow;
+  --white: rgba(244, 244, 244, 0.915);
   --dark-blue: rgba(0, 2, 34);
   --medium-blue: rgba(56, 81, 101);
 }
