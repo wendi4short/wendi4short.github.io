@@ -4,7 +4,7 @@
 
 :root {
   --bright-blue: rgba(0, 247, 255, 0.542);
-  --white: rgba(244, 244, 244, 0.915);
+  --white: rgb(255, 255, 255);
   --dark-blue: rgba(0, 2, 34);
   --medium-blue: rgba(56, 81, 101);
 }
@@ -32,7 +32,7 @@ body {
 }
 
 #education {
-  background: url("C:\Users\Wenteehee\Desktop\wendi4short.github.io\images\joanna-kosinska-bF2vsubyHcQ-unsplash.jpg") no-repeat fixed;
+  background: url("images\kimberly-farmer-lUaaKCUANVI-unsplash.jpg") no-repeat fixed;
   background-position: center center;
   background-size: cover;
   flex-direction: column; /* not the default row */
