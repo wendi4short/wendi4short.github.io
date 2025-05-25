@@ -1,0 +1,193 @@
+!!python/object:pandas.core.frame.DataFrame
+_flags:
+  allows_duplicate_labels: true
+_metadata: []
+_mgr: !!python/object/apply:pandas.core.internals.managers.BlockManager
+- !!python/tuple
+  - !!python/object/apply:pandas._libs.internals._unpickle_block
+    - !!python/object/apply:numpy.core.multiarray._reconstruct
+      args:
+      - &id001 !!python/name:numpy.ndarray ''
+      - !!python/tuple
+        - 0
+      - !!binary |
+        Yg==
+      state: !!python/tuple
+      - 1
+      - !!python/tuple
+        - 26
+        - 4
+      - &id002 !!python/object/apply:numpy.dtype
+        args:
+        - O8
+        - false
+        - true
+        state: !!python/tuple
+        - 3
+        - '|'
+        - null
+        - null
+        - null
+        - -1
+        - -1
+        - 63
+      - false
+      - - MG10001
+        - MG10002
+        - MG10003
+        - MG10004
+        - New_value
+        - Dummy
+        - Dummy
+        - Dummy
+        - New_value
+        - 2020
+        - 2021
+        - 2022
+        - New_value
+        - Oil and gas
+        - Oil and gas
+        - Oil and gas
+        - New_value
+        - 3001
+        - 3002
+        - 3003
+        - New_value
+        - 2020
+        - 2021
+        - 2022
+        - New_value
+        - 0.2
+        - 0.2
+        - 0.2
+        - New_value
+        - 0.3
+        - 0.3
+        - 0.3
+        - New_value
+        - 4000
+        - 4000
+        - 4000
+        - New_value
+        - 1000
+        - 1000
+        - 1000
+        - New_value
+        - 2019
+        - 2019
+        - 2019
+        - New_value
+        - AR
+        - AR
+        - AR
+        - New_value
+        - .nan
+        - .nan
+        - .nan
+        - New_value
+        - 1000
+        - 1000
+        - 1000
+        - New_value
+        - 2019
+        - 2019
+        - 2019
+        - New_value
+        - AR
+        - AR
+        - AR
+        - New_value
+        - .nan
+        - .nan
+        - .nan
+        - New_value
+        - 1000
+        - 1000
+        - 1000
+        - New_value
+        - 2019
+        - 2019
+        - 2019
+        - New_value
+        - AR
+        - AR
+        - AR
+        - New_value
+        - .nan
+        - .nan
+        - .nan
+        - New_value
+        - Tco3
+        - Tco4
+        - Tco5
+        - New_value
+        - 1000
+        - 1000
+        - 1000
+        - New_value
+        - 2019
+        - 2019
+        - 2019
+        - New_value
+        - barrels of oil
+        - barrels of oil
+        - barrels of oil
+        - New_value
+        - AR
+        - AR
+        - AR
+    - !!python/object/apply:builtins.slice
+      - 0
+      - 26
+      - 1
+    - 2
+- - !!python/object/apply:pandas.core.indexes.base._new_Index
+    - !!python/name:pandas.core.indexes.base.Index ''
+    - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+        args:
+        - *id001
+        - !!python/tuple
+          - 0
+        - !!binary |
+          Yg==
+        state: !!python/tuple
+        - 1
+        - !!python/tuple
+          - 26
+        - *id002
+        - false
+        - - entity_id
+          - name
+          - year
+          - primary industry.sector
+          - exposure.value
+          - exposure.year
+          - market_cap.year
+          - market_cap.value
+          - market_cap.source
+          - scope1.absolute_emissions
+          - scope1.absolute_emissions.year
+          - scope1.absolute_emissions.source
+          - scope1.absolute_emissions.type
+          - scope2.absolute_emissions
+          - scope2.absolute_emissions.year
+          - scope2.absolute_emissions.source
+          - scope2.absolute_emissions.type
+          - scope3.absolute_emissions
+          - scope3.absolute_emissions.year
+          - scope3.absolute_emissions.source
+          - scope3.absolute_emissions.type
+          - absolute_emissions.unit
+          - production.value
+          - production.year
+          - production.unit
+          - production.source
+      name: null
+  - !!python/object/apply:pandas.core.indexes.base._new_Index
+    - !!python/name:pandas.core.indexes.range.RangeIndex ''
+    - name: null
+      start: 0
+      step: 1
+      stop: 4
+_typ: dataframe
+attrs: {}
