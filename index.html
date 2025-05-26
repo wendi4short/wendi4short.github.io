@@ -22,11 +22,9 @@
                 <a class="navbar-brand" href="#">Back to Top</a>
             </div>
             <ul class="nav">
-                <!-- <li class="nav-item active"><a href="#aboutme" class="nav-link">Contact</a></li> -->
                 <li class="nav-item active"><a href="#introduction" class="nav-link">Introduction</a></li>
                 <li class="nav-item active"><a href="#rules" class="nav-link">Ground Rules</a></li>
                 <li class="nav-item active"><a href="#reviews" class="nav-link">Reviews</a></li>
-                <!-- <li class="nav-item active"><a href="#skillsAndCourses" class="nav-link">Skills and Courses</a></li> -->
             </ul>
         </div>
     </nav>
@@ -44,12 +42,10 @@
     <div id="rules" class="container-fluid text-wrap fill">
     </div>
 
-    <div id="reviews" class="container-fluid text-wrap fill">
+    <div id="reviews" data-bs-ride="carousel" class="container-fluid text-wrap fill carousel slide">
     </div>
 
 
-    <!-- <div id="skillsAndCourses" class="container-fluid text-wrap fill">
-    </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -63,12 +59,10 @@
     <script>
         $(function () {
             $('#home').load('/html/home.html');
-            // $('#aboutme').load('/html/about_me.html');
             $('#introduction').load('/html/introduction.html');
             $('#rules').load('/html/rules.html');
             $('#reviews').load('/html/reviews.html');
-            // $('#extraCurriculars').load('/html/extra_curriculars.html');
-            // $('#projects').load('/html/projects.html');
+
         });
 
     </script>
