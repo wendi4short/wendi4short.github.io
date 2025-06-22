@@ -2,11 +2,20 @@
 
 /* set core colours as variables for use in the entire doc */
 
-:root {
+/* :root {
   --bright-blue: rgba(0, 247, 255, 0.542);
   --white: snow;
   --dark-blue: rgb(0, 2, 34);
   --medium-blue: rgb(56, 81, 101);
+} */
+
+:root {
+  --cheese-yellow: #f5c542;       /* Warm and appetizing like cheese */
+  --sauce-red: #d94f30;           /* Tomato sauce red */
+  --crust-brown: #8b5e3c;         /* Pizza crust or oven-baked browns */
+  --mozzarella-white: #fff5e1;    /* Off-white like melted cheese */
+  --basil-green: #3f7d20;         /* Fresh basil for accent/highlights */
+  --olive-black: #2e2e2e;         /* Deep color for text or contrast */
 }
 
 html {
@@ -21,7 +30,7 @@ body {
 }
 
 #home {
-  background: linear-gradient(110deg, var(--dark-blue), var(--medium-blue)) no-repeat fixed;
+  background: linear-gradient(110deg, var(--pizza-crust), var(--pizza-sauce)) no-repeat fixed;
   background-position: center center;
   background-size: cover;
   flex-direction: column; /* not the default row */
@@ -43,7 +52,7 @@ body {
   object-fit: cover;
 }
 
-.carousel-cover {
+/* .carousel-cover {
   width: auto;
   height: 100%;
   object-fit: cover;
@@ -122,8 +131,8 @@ li {
   padding: 5% 5%;
   height: 100%;
   width: auto;
-}
-
+} */
+/* 
 .inContainer {
   position: relative;
 }
@@ -270,4 +279,228 @@ ul {
 
 .project-main {
   background-color: white;
+} */
+
+.carousel-cover {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
+}
+
+a.icon {
+  font-size: 2rem;
+}
+
+h1 {
+  color: var(--pizza-mozzarella);
+  font-weight: 300;
+}
+
+h2 {
+  color: var(--pizza-cheese);
+  font-weight: 100;
+}
+
+h3 {
+  color: var(--pizza-crust);
+  font-weight: 300;
+  filter: drop-shadow(0px 1px 1px var(--pizza-mozzarella));
+  padding-top: 5rem;
+}
+
+h4 {
+  color: var(--pizza-cheese);
+  font-weight: 700;
+}
+
+li {
+  color: var(--pizza-mozzarella);
+}
+
+.bigName h1 {
+  margin-top: 20%;
+  text-decoration: none;
+  filter: drop-shadow(0px 4px 4px var(--pizza-olive));
+}
+
+.bigName h2 {
+  text-decoration: none;
+  filter: drop-shadow(0px 2px 4px var(--pizza-crust));
+}
+
+.nav-link {
+  color: var(--pizza-mozzarella);
+  filter: drop-shadow(0px 4px 4px var(--pizza-olive));
+}
+
+.navbar-brand {
+  color: var(--pizza-cheese);
+  font-size: 2rem;
+  filter: drop-shadow(0px 2px 2px var(--pizza-mozzarella));
+}
+
+.rounded-circle.me {
+  border: 10px solid transparent;
+  margin-bottom: 10%;
+  max-width: 19vw;
+  height: auto;
+  opacity: 0.9;
+  justify-content: center;
+}
+
+.rounded-circle.me:hover {
+  border-color: var(--pizza-crust);
+  border-width: 20px;
+}
+
+.container-fluid.fill {
+  background: linear-gradient(110deg, var(--pizza-crust), var(--pizza-sauce));
+  padding: 5% 5%;
+  height: 100%;
+  width: auto;
+}
+
+.inContainer {
+  position: relative;
+}
+
+.col-4,
+.col-6 {
+  padding: 1vh 2vw;
+}
+
+.col-6.left,
+.col-4.left,
+.col-8.left {
+  border-right: 1px dashed var(--pizza-mozzarella);
+}
+
+.col-6.right,
+.col-4.right {
+  border-left: 1px dashed var(--pizza-mozzarella);
+}
+
+.contactDetails {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contactme {
+  color: var(--pizza-mozzarella);
+}
+
+.iconblock {
+  color: var(--pizza-mozzarella);
+  list-style-type: none;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+a.icon {
+  color: var(--pizza-mozzarella);
+}
+
+a.icon:hover {
+  color: var(--pizza-cheese);
+}
+
+a.nav-link:hover {
+  color: var(--pizza-cheese);
+}
+
+.creditContainer {
+  position: relative;
+}
+
+.credits {
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+  font-size: 2vmin;
+  color: var(--pizza-mozzarella);
+}
+
+.progress {
+  margin-bottom: 10px;
+  font-size: 1.3vh;
+  height: 2vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 7vmin;
+  margin-top: 3vmin;
+  color: var(--pizza-mozzarella);
+}
+
+h2 {
+  font-size: 4.5vmin;
+  color: var(--pizza-cheese);
+}
+
+h3 {
+  font-size: 3vmin;
+  margin-top: 0.6vmin;
+  color: var(--pizza-crust);
+}
+
+h4 {
+  font-size: 2vmin;
+  color: var(--pizza-cheese);
+}
+
+li {
+  font-size: 2vmin;
+  color: var(--pizza-mozzarella);
+}
+
+p {
+  font-size: 2vmin;
+  color: var(--pizza-mozzarella);
+}
+
+ul {
+  margin: 0;
+}
+
+.forcolumns {
+  margin-top: 1.5%;
+}
+
+#whycode {
+  margin-top: 3vmin;
+}
+
+.carousel-item {
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#projects {
+  height: 100vh;
+  padding: 0%;
+}
+
+.project-title {
+  color: var(--pizza-olive);
+}
+
+.project-date {
+  color: var(--pizza-mozzarella);
+  border-bottom: 0.2vh solid var(--pizza-crust);
+  padding-bottom: 2vh;
+  margin-right: 10vw;
+}
+
+.project-title-div {
+  margin-top: 15vh;
+  padding-left: 5vw;
+  padding-bottom: 2vh;
+}
+
+.project-main {
+  background-color: var(--pizza-mozzarella);
 }
