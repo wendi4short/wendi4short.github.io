@@ -9,13 +9,15 @@
   --medium-blue: rgb(56, 81, 101);
 } */
 
+/*  */
+
 :root {
-  --cheese-yellow: #f5c542;       /* Warm and appetizing like cheese */
-  --sauce-red: #d94f30;           /* Tomato sauce red */
-  --crust-brown: #8b5e3c;         /* Pizza crust or oven-baked browns */
-  --mozzarella-white: #fff5e1;    /* Off-white like melted cheese */
-  --basil-green: #3f7d20;         /* Fresh basil for accent/highlights */
-  --olive-black: #2e2e2e;         /* Deep color for text or contrast */
+  --pizza-cheese: #f5c542;       /* cheese-yellow */
+  --pizza-sauce: #d94f30;        /* sauce-red */
+  --pizza-crust: #8b5e3c;        /* crust-brown */
+  --pizza-mozzarella: #fff5e1;   /* mozzarella-white */
+  --pizza-basil: #3f7d20;        /* basil-green */
+  --pizza-olive: #2e2e2e;        /* olive-black */
 }
 
 html {
