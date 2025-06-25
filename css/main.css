@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-  color: var(--pizza-cheese);
+  color: var(--pizza-crust);
   font-weight: 100;
 }
 
@@ -200,7 +200,7 @@ h1 {
 
 h2 {
   font-size: 4.5vmin;
-  color: var(--pizza-cheese);
+  color: var(--pizza-crust);
 }
 
 h3 {
@@ -266,4 +266,9 @@ ul {
 
 .project-main {
   background-color: var(--pizza-mozzarella);
+}
+
+.project-review {
+  color: var(--pizza-olive); 
+  font-size: 2vmin; 
 }
