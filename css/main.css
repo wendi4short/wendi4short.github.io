@@ -272,3 +272,8 @@ ul {
   color: var(--pizza-olive); 
   font-size: 2vmin; 
 }
+
+.carousel-caption p {
+  color: var(--pizza-olive); 
+
+}
