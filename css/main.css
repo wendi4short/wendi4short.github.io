@@ -62,14 +62,14 @@ h1 {
 }
 
 h2 {
-  color: var(--pizza-crust);
+  color: var(--pizza-cheese);
   font-weight: 100;
 }
 
 h3 {
   color: var(--pizza-crust);
   font-weight: 300;
-  filter: drop-shadow(0px 1px 1px var(--pizza-mozzarella));
+  /* filter: drop-shadow(0px 1px 1px var(--pizza-mozzarella)); */
   padding-top: 5rem;
 }
 
@@ -200,7 +200,7 @@ h1 {
 
 h2 {
   font-size: 4.5vmin;
-  color: var(--pizza-crust);
+  color: var(--pizza-cheese);
 }
 
 h3 {
