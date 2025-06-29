@@ -32,24 +32,7 @@ body {
   object-fit: cover;
 }
 
-html, body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
 
-#reviews,
-.carousel,
-.carousel-inner,
-.carousel-item {
-  height: 100vh;
-}
-
-.carousel-cover {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
 
 .carousel-cover {
   width: auto;
@@ -228,6 +211,8 @@ li {
 
 p {
   font-size: 2vmin;
+  color: var(--pizza-mozzarella);
+
 }
 
 ul {
