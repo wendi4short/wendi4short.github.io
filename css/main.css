@@ -1,272 +1,513 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
-
+/* ==========================================================================
+   main.css — Pizza Reviews Site (Updated with Pizza Palette)
+   ========================================================================== */
 
 :root {
-  --pizza-cheese: #f5c542;       
-  --pizza-sauce: #f14131;        
-  --pizza-crust: #b15915;        
-  --pizza-mozzarella: #fff5e1;   
-  --pizza-basil: #3f7d20;        
-  --pizza-olive: #2e2e2e;        
+  /* Pizza-inspired colors */
+  --pizza-cheese: #dcad2b;        /* golden cheese */
+  --pizza-sauce: #f14131;         /* tomato sauce */
+  --pizza-crust: #b15915;         /* baked crust */
+  --pizza-mozzarella: #fff5e1;    /* creamy cheese base */
+  --pizza-basil: #3f7d20;         /* fresh basil */
+  --pizza-olive: #2e2e2e;         /* dark olive */
+
+  /* Theme variables built from palette */
+  --bg: var(--pizza-mozzarella);
+  --accent: var(--pizza-sauce);
+  --accent-dark: var(--pizza-crust);
+  --cheese: var(--pizza-cheese);
+  --leaf: var(--pizza-basil);
+  --muted: #4f463f;
+  --card: #fffaf2;
+  --glass: rgba(255, 245, 225, 0.8);
+
+  --max-width: 1200px;
+  --pad: 1.25rem;
+  --radius: 10px;
+  --transition: 200ms ease;
+  --shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-html {
-  scroll-behavior: smooth;
+/* -------------------------
+   Base / Reset
+   ------------------------- */
+* {
+  box-sizing: border-box;
 }
-
+html,
 body {
-  font-family: "Advent Pro", sans-serif;
+  height: 100%;
+}
+body {
   margin: 0;
-  position: relative;
-  height: 100%;
-}
-
-#home {
-  background: linear-gradient(110deg, var(--pizza-crust), var(--pizza-sauce)) no-repeat fixed;
-  background-position: center center;
-  background-size: cover;
-  flex-direction: column; 
-  justify-content: center; 
-  height: 100%; 
-  width: auto;
-  object-fit: cover;
-}
-
-
-
-.carousel-cover {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  -webkit-filter: brightness(60%);
-  filter: brightness(60%);
-}
-
-a.icon {
-  font-size: 2rem;
-}
-
-h1 {
-  color: var(--pizza-mozzarella);
-  font-weight: 300;
-}
-
-h2 {
-  color: var(--pizza-cheese);
-  font-weight: 100;
-}
-
-h3 {
-  color: var(--pizza-crust);
-  font-weight: 300;
-  filter: drop-shadow(0px 1px 1px var(--pizza-mozzarella));
-  padding-top: 5rem;
-}
-
-h4 {
+  font-family: "Advent Pro", sans-serif;
+  background: var(--bg);
   color: var(--pizza-olive);
+  line-height: 1.5;
+}
+
+/* -------------------------
+   Layout wrappers
+   ------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header,
+.site-footer {
+  width: 100%;
+  background: linear-gradient(90deg, var(--glass), rgba(255, 245, 225, 0.7));
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* -------------------------
+   Navigation
+   ------------------------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.brand {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--pizza-crust);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.brand .logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, var(--pizza-sauce), var(--pizza-crust));
+  display: inline-block;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--pizza-olive);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  transition: background var(--transition), color var(--transition);
+}
+
+.nav a:hover {
+  color: var(--pizza-basil);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* -------------------------
+   Hero / Home
+   ------------------------- */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 197, 66, 0.2),
+    rgba(241, 65, 49, 0.05)
+  );
+}
+
+.hero .title {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  margin: 0 0 0.5rem;
+  color: var(--pizza-crust);
+  letter-spacing: -0.5px;
+}
+
+.hero p.lead {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--pizza-olive);
+}
+
+/* -------------------------
+   Page sections
+   ------------------------- */
+.section {
+  padding: 3rem 0;
+}
+
+.section h2 {
+  margin: 0 0 1rem;
+  color: var(--pizza-crust);
+  font-size: 1.6rem;
+}
+
+.section p {
+  color: var(--pizza-olive);
+  margin: 0 0 1rem;
+}
+
+/* -------------------------
+   Intro Page
+   ------------------------- */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.bio {
+  background: var(--card);
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+/* -------------------------
+   Reviews Page
+   ------------------------- */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.review-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.review-card h3 {
+  margin: 0;
+  color: var(--pizza-crust);
+  font-size: 1.05rem;
+}
+
+.score {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--pizza-cheese);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.04), transparent);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.meta {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--pizza-olive);
+  font-size: 0.9rem;
+}
+
+/* -------------------------
+   GROUND RULES PAGE
+   ------------------------- */
+#rules {
+  display: block;        
+  padding: 6rem 2rem;    
+  box-sizing: border-box;
+  background: linear-gradient(
+    135deg,
+    var(--pizza-cheese) 0%,
+    var(--pizza-crust) 40%,
+    var(--pizza-olive) 100%
+  );
+  color: var(--pizza-mozzarella);
+  font-size: 0.9rem; /* smaller font */
+  line-height: 1.4;  /* slightly tighter spacing */
+}
+
+#rules ul {
+  max-width: 100%;     
+  margin: 0;           
+  padding: 0;
+  list-style: none;
+}
+
+#rules li {
+  font-size: 0.9rem;   /* smaller font */
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+  background-color: rgba(255, 245, 225, 0.1);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+}
+
+#rules li:hover {
+  background-color: rgba(255, 245, 225, 0.25);
+  transform: translateY(-2px);
+}
+
+#rules h2 {
+  color: var(--pizza-mozzarella);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem); /* slightly smaller title */
+  margin-bottom: 1rem;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* -------------------------
+   Carousel for Review Links
+   ------------------------- */
+.carousel-wrap {
+  width: 100%;
+  padding: 2rem 0 4rem;
+  background: linear-gradient(
+    180deg,
+    var(--pizza-mozzarella) 0%,
+    var(--pizza-cheese) 20%,
+    var(--pizza-sauce) 50%,
+    var(--pizza-crust) 80%,
+    var(--pizza-olive) 100%
+  ); /* Pizza-themed gradient */
+}
+
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+/* Default: desktop/laptop view */
+.carousel a {
+  flex: 0 0 350px; 
+  scroll-snap-align: start;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    var(--card),
+    rgba(255, 245, 225, 0.7)
+  );
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.carousel a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.carousel .thumb {
+  height: 140px;
+  background: linear-gradient(
+    90deg,
+    var(--pizza-sauce),
+    var(--pizza-crust)
+  );
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
   font-weight: 700;
 }
 
-li {
-  color: #1e1e1e;
-}
-
-.bigName h1 {
-  margin-top: 20%;
-  text-decoration: none;
-  filter: drop-shadow(0px 4px 4px var(--pizza-olive));
-}
-
-.bigName h2 {
-  text-decoration: none;
-  filter: drop-shadow(0px 2px 4px var(--pizza-crust));
-}
-
-.nav-link {
-  color: #1e1e1e;
-  font-weight: 600;
-}
-
-.navbar-brand {
-  color: var(--pizza-cheese);
-  font-size: 2rem;
-  
-}
-.navbar-brand:hover{
-  cursor: pointer;
-}
-
-/* .rounded-circle.me {
-  border: 10px solid transparent;
-  margin-bottom: 10%;
-  max-width: 19vw;
-  height: auto;
-  opacity: 0.9;
-  justify-content: center;
-}
-
-.rounded-circle.me:hover {
-  border-color: var(--pizza-crust);
-  border-width: 20px;
-} */
-
-.container-fluid.fill {
-  background: linear-gradient(110deg, #b73529, var(--pizza-sauce)) no-repeat fixed;
-  padding: 5% 5%;
-  height: 100%;
-  width: auto;
-}
-
-.inContainer {
-  position: relative;
-}
-
-.col-4,
-.col-6 {
-  padding: 1vh 2vw;
-}
-
-.col-6.left,
-.col-4.left,
-.col-8.left {
-  border-right: 1px dashed var(--pizza-mozzarella);
-}
-
-.col-6.right,
-.col-4.right {
-  border-left: 1px dashed var(--pizza-mozzarella);
-}
-
-/* .contactDetails {
-  list-style-type: none;
-  padding: 0;
-}
-
-.contactme {
-  color: var(--pizza-mozzarella);
-} */
-/* 
-.iconblock {
-  color: var(--pizza-mozzarella);
-  list-style-type: none;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-} */
-
-a.icon {
-  color: var(--pizza-mozzarella);
-}
-
-a.icon:hover {
-  color: var(--pizza-basil);
-}
-
-a.nav-link:hover {
-  color: var(--pizza-basil);
-}
-
-.creditContainer {
-  position: relative;
-}
-/* 
-.credits {
-  position: absolute;
-  bottom: 1vw;
-  right: 1vw;
-  font-size: 2vmin;
-  color: var(--pizza-mozzarella);
-} */
-/* 
-.progress {
-  margin-bottom: 10px;
-  font-size: 1.3vh;
-  height: 2vh;
-  width: 100%;
-} */
-
-h1 {
-  font-size: 55px;
-  margin-top: 3vmin;
-  color: #1e1e1e;
-}
-
-h2 {
-  font-size: 40px;
-  color: #325e00;
-}
-
-h3 {
-  font-size: 3vmin;
-  margin-top: 0.6vmin;
+.carousel .doc-title {
+  font-weight: 700;
   color: var(--pizza-crust);
 }
 
-h4 {
-  font-size: 2vmin;
-  color: var(--pizza-cheese);
-}
-
-li {
-  font-size: 2vmin;
+/* -------------------------
+   Footer
+   ------------------------- */
+.site-footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--pizza-olive);
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  background: linear-gradient(90deg, var(--pizza-crust), var(--pizza-sauce));
   color: var(--pizza-mozzarella);
 }
 
-p {
-  font-size: 2vmin;
-  color: #1e1e1e;
+/* -------------------------
+   Responsive
+   ------------------------- */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .carousel a {
+    flex: 0 0 45%;
+  }
 }
 
-ul {
-  margin: 0;
+@media (max-width: 900px) {
+  .carousel a {
+    flex: 0 0 82%;
+  }
+
+  .carousel .thumb {
+    height: 100px;
+  }
 }
 
-.forcolumns {
-  margin-top: 1.5%;
+/* -------------------------
+   HOME PAGE / FRONT PAGE
+   ------------------------- */
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    120deg,
+    var(--pizza-crust) 0%,
+    var(--pizza-sauce) 45%,
+    var(--pizza-basil) 100%
+  );
+  color: var(--pizza-mozzarella);
+  background-attachment: fixed;
+  padding: 5rem 2rem;
 }
 
-#whycode {
-  margin-top: 3vmin;
+.home-content {
+  max-width: 800px;
 }
 
-.carousel-item {
-  height: 100vh;
-  max-width: 100%;
-  max-height: 100%;
+.home-content h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--pizza-mozzarella);
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
 }
 
-#projects {
-  height: 100vh;
-  padding: 0%;
+.home-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--pizza-mozzarella);
+  margin-bottom: 2rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.project-title {
+.home-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-btn {
+  background: var(--pizza-cheese);
+  color: var(--pizza-olive);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: var(--pizza-mozzarella);
+  color: var(--pizza-sauce);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional subtle pizza texture overlay */
+#home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.05;
+  background-image: radial-gradient(
+    circle at 20% 20%,
+    var(--pizza-cheese) 2px,
+    transparent 3px
+  );
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+/* -------------------------
+   INTRODUCTION PAGE
+   ------------------------- */
+#introduction {
+  min-height: 100vh;
+  background-color: var(--pizza-mozzarella); /* Light creamy background */
+  color: var(--pizza-olive);
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(
+    circle at top left,
+    var(--pizza-cheese) 1%,
+    transparent 20%
+  ),
+  radial-gradient(
+    circle at bottom right,
+    var(--pizza-sauce) 1%,
+    transparent 25%
+  );
+  background-repeat: no-repeat;
+}
+
+#introduction h2 {
+  color: var(--pizza-basil);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+#introduction p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.7;
   color: var(--pizza-olive);
 }
 
-.project-date {
-  color: var(--pizza-mozzarella);
-  border-bottom: 0.2vh solid var(--pizza-crust);
-  padding-bottom: 2vh;
-  margin-right: 10vw;
+/* -------------------------
+   Back to Top Link Styling
+   ------------------------- */
+a.back-to-top {
+  color: var(--pizza-mozzarella); /* matches your page text */
+  text-decoration: none;           /* remove underline */
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-.project-title-div {
-  margin-top: 15vh;
-  padding-left: 5vw;
-  padding-bottom: 2vh;
-}
-
-.project-main {
-  background-color: var(--pizza-mozzarella);
-}
-
-.project-review {
-  color: var(--pizza-olive); 
-  font-size: 2vmin; 
-}
-
-.carousel-caption p {
-  color: var(--pizza-olive); 
-
+a.back-to-top:hover {
+  color: var(--pizza-cheese); /* accent on hover */
+  text-decoration: underline;  /* optional subtle underline */
 }
