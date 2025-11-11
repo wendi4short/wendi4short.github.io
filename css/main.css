@@ -3,7 +3,7 @@
 
 :root {
   --pizza-cheese: #f5c542;       
-  --pizza-sauce: #ff795b;        
+  --pizza-sauce: #f14131;        
   --pizza-crust: #b15915;        
   --pizza-mozzarella: #fff5e1;   
   --pizza-basil: #3f7d20;        
@@ -69,7 +69,7 @@ h4 {
 }
 
 li {
-  color: var(--pizza-mozzarella);
+  color: #1e1e1e;
 }
 
 .bigName h1 {
@@ -84,14 +84,17 @@ li {
 }
 
 .nav-link {
-  color: var(--pizza-mozzarella);
-  filter: drop-shadow(0px 4px 4px var(--pizza-olive));
+  color: #1e1e1e;
+  font-weight: 600;
 }
 
 .navbar-brand {
   color: var(--pizza-cheese);
   font-size: 2rem;
-  filter: drop-shadow(0px 2px 2px var(--pizza-mozzarella));
+  
+}
+.navbar-brand:hover{
+  cursor: pointer;
 }
 
 /* .rounded-circle.me {
@@ -109,7 +112,7 @@ li {
 } */
 
 .container-fluid.fill {
-  background: linear-gradient(110deg, var(--pizza-crust), var(--pizza-sauce));
+  background: linear-gradient(110deg, #b73529, var(--pizza-sauce)) no-repeat fixed;
   padding: 5% 5%;
   height: 100%;
   width: auto;
@@ -156,11 +159,11 @@ a.icon {
 }
 
 a.icon:hover {
-  color: var(--pizza-cheese);
+  color: var(--pizza-basil);
 }
 
 a.nav-link:hover {
-  color: var(--pizza-cheese);
+  color: var(--pizza-basil);
 }
 
 .creditContainer {
@@ -183,14 +186,14 @@ a.nav-link:hover {
 } */
 
 h1 {
-  font-size: 7vmin;
+  font-size: 55px;
   margin-top: 3vmin;
-  color: var(--pizza-mozzarella);
+  color: #1e1e1e;
 }
 
 h2 {
-  font-size: 4.5vmin;
-  color: var(--pizza-cheese);
+  font-size: 40px;
+  color: #325e00;
 }
 
 h3 {
@@ -211,8 +214,7 @@ li {
 
 p {
   font-size: 2vmin;
-  color: var(--pizza-mozzarella);
-
+  color: #1e1e1e;
 }
 
 ul {
@@ -268,4 +270,3 @@ ul {
   color: var(--pizza-olive); 
 
 }
-
