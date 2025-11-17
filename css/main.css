@@ -81,7 +81,7 @@ body {
   text-decoration: none;
   color: var(--pizza-crust);
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
 }
 
 .brand .logo {
@@ -101,8 +101,9 @@ body {
 .nav a {
   color: var(--pizza-mozzarella);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.35rem 0.5rem;
+  font-size: 0.85rem; /* ← reduce this value to make the font smaller */
   border-radius: 6px;
   transition: background var(--transition), color var(--transition);
 }
@@ -504,7 +505,7 @@ body {
 a.back-to-top {
   color: var(--pizza-mozzarella); /* matches your page text */
   text-decoration: none;           /* remove underline */
-  font-weight: 600;
+  font-weight: 4s00;
   transition: color 0.3s ease;
 }
 
