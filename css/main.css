@@ -238,112 +238,148 @@ h1, h2, h3, h4, h5, h6 {
    GROUND RULES PAGE
    ------------------------- */
 #rules {
-  display: block;        
-  padding: 6rem 2rem;    
+  display: block;
+  padding: 6rem 2rem;
   box-sizing: border-box;
-  background: linear-gradient(
-    135deg,
-    var(--pizza-cheese) 0%,
-    var(--pizza-crust) 40%,
-    var(--pizza-olive) 100%
+  background: radial-gradient(
+    ellipse at 50% 20%,
+    #2c1a0a 0%,
+    #100804 100%
   );
   color: var(--pizza-mozzarella);
-  font-size: 0.9rem; /* smaller font */
-  line-height: 1.4;  /* slightly tighter spacing */
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 #rules ul {
-  max-width: 100%;     
-  margin: 0;           
+  max-width: 100%;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 #rules li {
-  font-size: 0.9rem;   /* smaller font */
-  margin-bottom: 0.8rem;
-  line-height: 1.4;
-  background-color: rgba(255, 245, 225, 0.1);
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  line-height: 1.8;
+  background-color: transparent;
+  padding: 1rem 0;
+  border-radius: 0;
+  border-top: 1px solid rgba(255, 245, 225, 0.12);
+  transition: color var(--transition);
+}
+
+#rules li:first-child {
+  border-top: none;
 }
 
 #rules li:hover {
-  background-color: rgba(255, 245, 225, 0.25);
-  transform: translateY(-2px);
+  background-color: transparent;
+  transform: none;
+  color: var(--pizza-cheese);
 }
 
-#rules h2 {
+#rules h1 {
   color: var(--pizza-mozzarella);
-  font-size: clamp(1.8rem, 3.5vw, 2.5rem); /* slightly smaller title */
-  margin-bottom: 1rem;
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+#rules h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--pizza-cheese);
+  margin-top: 0.5rem;
 }
 
 /* -------------------------
-   Carousel for Review Links
+   Reviews / Carousel Section
    ------------------------- */
+#reviews-carousel {
+  background-color: #0e0703;
+  padding-top: 6rem;
+  padding-bottom: 0;
+}
+
 .carousel-wrap {
   width: 100%;
-  padding: 2rem 0 4rem;
-  background: linear-gradient(
-    180deg,
-    var(--pizza-mozzarella) 0%,
-    #f0e8d8 100%
-  );
+  padding: 0;
+  background: transparent;
 }
 
-.carousel {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding: 0.5rem;
-  scroll-snap-type: x mandatory;
+/* Bootstrap carousel image height */
+.carousel-cover {
+  height: 78vh;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* Default: desktop/laptop view */
-.carousel a {
-  flex: 0 0 350px; 
-  scroll-snap-align: start;
-  display: block;
+/* Gradient overlay behind caption text */
+.carousel-caption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 2rem 2rem;
+  background: linear-gradient(to top, rgba(8, 4, 1, 0.80) 0%, transparent 100%);
+  text-align: left;
+}
+
+.carousel-caption h5 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.carousel-caption h5 a {
+  color: var(--pizza-mozzarella) !important;
   text-decoration: none;
-  color: inherit;
-  border-radius: 10px;
-  background: linear-gradient(
-    180deg,
-    var(--card),
-    rgba(255, 245, 225, 0.7)
-  );
-  padding: 1rem;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: color 0.3s ease;
 }
 
-.carousel a:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+.carousel-caption h5 a:hover {
+  color: var(--pizza-cheese) !important;
 }
 
-.carousel .thumb {
-  height: 140px;
-  background: linear-gradient(
-    90deg,
-    var(--pizza-sauce),
-    var(--pizza-crust)
-  );
-  border-radius: 8px;
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 700;
+.carousel-caption p {
+  font-family: "Nunito", sans-serif;
+  color: var(--pizza-cheese);
+  font-size: 0.78rem;
+  letter-spacing: 3px;
+  margin-bottom: 0;
 }
 
-.carousel .doc-title {
-  font-weight: 700;
-  color: var(--pizza-crust);
+/* Carousel indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: var(--pizza-cheese);
+  opacity: 0.35;
+  width: 24px;
+  height: 2px;
+  border-radius: 0;
 }
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* Carousel prev/next controls */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.5;
+  transition: opacity var(--transition);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
 
 /* -------------------------
    Footer
@@ -361,19 +397,9 @@ h1, h2, h3, h4, h5, h6 {
 /* -------------------------
    Responsive
    ------------------------- */
-@media (max-width: 1200px) and (min-width: 901px) {
-  .carousel a {
-    flex: 0 0 45%;
-  }
-}
-
 @media (max-width: 900px) {
-  .carousel a {
-    flex: 0 0 82%;
-  }
-
-  .carousel .thumb {
-    height: 100px;
+  .carousel-cover {
+    height: 55vh;
   }
 }
 
@@ -471,7 +497,7 @@ h1, h2, h3, h4, h5, h6 {
    ------------------------- */
 #introduction {
   min-height: 100vh;
-  background-color: var(--pizza-mozzarella); /* Light creamy background */
+  background-color: #f2e8d5;
   color: var(--pizza-olive);
   padding: 6rem 3rem;
   display: flex;
@@ -479,29 +505,35 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   background-image: radial-gradient(
-    circle at top left,
-    var(--pizza-cheese) 1%,
-    transparent 20%
-  ),
-  radial-gradient(
-    circle at bottom right,
-    var(--pizza-sauce) 1%,
-    transparent 25%
+    ellipse at 50% 0%,
+    rgba(201, 168, 76, 0.10) 0%,
+    transparent 65%
   );
   background-repeat: no-repeat;
 }
 
-#introduction h2 {
+#introduction h1 {
   color: var(--pizza-crust);
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 1rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+#introduction h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: var(--pizza-cheese);
+  margin-top: 0.6rem;
+  margin-bottom: 1.5rem;
 }
 
 #introduction p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   max-width: 800px;
-  text-align: center;
-  line-height: 1.7;
+  line-height: 1.85;
   color: var(--pizza-olive);
 }
 
