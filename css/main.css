@@ -3,13 +3,13 @@
    ========================================================================== */
 
 :root {
-  /* Pizza-inspired colors */
-  --pizza-cheese: #dcad2b;        /* golden cheese */
-  --pizza-sauce: #f14131;         /* tomato sauce */
-  --pizza-crust: #b15915;         /* baked crust */
-  --pizza-mozzarella: #fff5e1;    /* creamy cheese base */
-  --pizza-basil: #3f7d20;         /* fresh basil */
-  --pizza-olive: #2e2e2e;         /* dark olive */
+  /* Pizza-inspired colors — muted, rich, wood-fired trattoria palette */
+  --pizza-cheese: #c9a84c;        /* antique gold */
+  --pizza-sauce: #c4622d;         /* deep terracotta / burnt sienna */
+  --pizza-crust: #7a3d15;         /* charred crust, darker and richer */
+  --pizza-mozzarella: #fff5e1;    /* warm parchment */
+  --pizza-basil: #4a6741;         /* muted sage green */
+  --pizza-olive: #1e150e;         /* warm near-black, charred wood */
 
   /* Theme variables built from palette */
   --bg: var(--pizza-mozzarella);
@@ -17,7 +17,7 @@
   --accent-dark: var(--pizza-crust);
   --cheese: var(--pizza-cheese);
   --leaf: var(--pizza-basil);
-  --muted: #4f463f;
+  --muted: #5a4a3a;
   --card: #fffaf2;
   --glass: rgba(255, 245, 225, 0.8);
 
@@ -40,10 +40,14 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Advent Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
   background: var(--bg);
   color: var(--pizza-olive);
   line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, serif;
 }
 
 /* -------------------------
@@ -71,7 +75,11 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 0;
-  background-color: #2e2e2e;
+  background-color: rgba(20, 14, 8, 0.80);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
 }
 
 .brand {
@@ -109,8 +117,8 @@ body {
 }
 
 .nav a:hover {
-  color: var(--pizza-basil);
-  background: rgba(0, 0, 0, 0.05);
+  color: var(--pizza-cheese);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 /* -------------------------
@@ -281,11 +289,8 @@ body {
   background: linear-gradient(
     180deg,
     var(--pizza-mozzarella) 0%,
-    var(--pizza-cheese) 20%,
-    var(--pizza-sauce) 50%,
-    var(--pizza-crust) 80%,
-    var(--pizza-olive) 100%
-  ); /* Pizza-themed gradient */
+    #f0e8d8 100%
+  );
 }
 
 .carousel {
@@ -376,17 +381,18 @@ body {
    HOME PAGE / FRONT PAGE
    ------------------------- */
 #home {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(
-    120deg,
-    var(--pizza-crust) 0%,
-    var(--pizza-sauce) 45%,
-    var(--pizza-basil) 100%
+  background: radial-gradient(
+    ellipse at 50% 60%,
+    #5c2e0e 0%,
+    #3a1a08 45%,
+    #1a0d04 100%
   );
   color: var(--pizza-mozzarella);
   background-attachment: fixed;
@@ -486,7 +492,7 @@ body {
 }
 
 #introduction h2 {
-  color: var(--pizza-basil);
+  color: var(--pizza-crust);
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1rem;
 }
@@ -505,7 +511,7 @@ body {
 a.back-to-top {
   color: var(--pizza-mozzarella); /* matches your page text */
   text-decoration: none;           /* remove underline */
-  font-weight: 4s00;
+  font-weight: 400;
   transition: color 0.3s ease;
 }
 
