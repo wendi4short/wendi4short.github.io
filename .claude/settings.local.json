@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git push origin master)"
+      "Bash(git push origin master)",
+      "Read(//c/Users/Wenteehee/OneDrive/Documents/**)",
+      "Bash(python3 -c \":*)",
+      "Bash(python -c \":*)"
     ]
   }
 }

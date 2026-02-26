@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where py)",
+      "Bash(py --version)",
+      "Bash(where node)",
+      "Bash(node --version)",
+      "Bash(where magick)",
+      "Bash(magick --version)",
+      "Bash(where convert)",
+      "Bash(where ffmpeg)",
+      "Bash(ffmpeg -version)",
+      "Bash(where powershell)",
+      "Bash(powershell -Command \"$PSVersionTable.PSVersion\")",
+      "Bash(powershell -Command \"$PSVersionTable\")",
+      "Bash(powershell -Command \"Get-Command Add-Type; [System.Reflection.Assembly]::LoadWithPartialName\\(''System.Drawing''\\) | Select-Object -ExpandProperty FullName\")"
+    ]
+  }
+}
