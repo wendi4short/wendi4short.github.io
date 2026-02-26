@@ -13,7 +13,8 @@
       "Bash(where powershell)",
       "Bash(powershell -Command \"$PSVersionTable.PSVersion\")",
       "Bash(powershell -Command \"$PSVersionTable\")",
-      "Bash(powershell -Command \"Get-Command Add-Type; [System.Reflection.Assembly]::LoadWithPartialName\\(''System.Drawing''\\) | Select-Object -ExpandProperty FullName\")"
+      "Bash(powershell -Command \"Get-Command Add-Type; [System.Reflection.Assembly]::LoadWithPartialName\\(''System.Drawing''\\) | Select-Object -ExpandProperty FullName\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"c:\\\\Users\\\\Wenteehee\\\\OneDrive\\\\Documents\\\\wendi4short.github.io\\\\make_covers.ps1\")"
     ]
   }
 }
